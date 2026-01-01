@@ -54,3 +54,4 @@ def safe_str(x) -> str:
     if pd.isna(x):
         return ""
     return str(x).str
+
