@@ -1,7 +1,8 @@
-Python 3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)] on win32
-Enter "help" below or click "Help" above for more information.
->>> import streamlit as st
-... import pandas as pd
+import streamlit as st
+import pandas as pd
+
+st.set_page_config(page_title="動画解説授業一覧", layout="wide")
+
 ... 
 ... st.set_page_config(page_title="動画解説授業一覧", layout="wide")
 ... 
@@ -185,4 +186,5 @@ render_cards(df, url_col)
 
 st.divider()
 st.caption("使い方：上で「学年・単元・ジャンル」を選ぶ → 必要なら検索 → 『▶ 動画を見る』")
+
 
