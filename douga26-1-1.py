@@ -18,7 +18,7 @@ Enter "help" below or click "Help" above for more information.
 ... # Streamlit Cloud では、App → Settings → Secrets に
 ... # PASSWORD="xxxx"
 ... # を入れるのがおすすめです。
-... PASSWORD = st.secrets.get("PASSWORD", "test123")  # ローカル用の仮PW
+... PASSWORD = st.secrets.get("PASSWORD", "1122")  # ローカル用の仮PW
 ... 
 ... if "authed" not in st.session_state:
 ...     st.session_state.authed = False
@@ -185,3 +185,4 @@ render_cards(df, url_col)
 
 st.divider()
 st.caption("使い方：上で「学年・単元・ジャンル」を選ぶ → 必要なら検索 → 『▶ 動画を見る』")
+
